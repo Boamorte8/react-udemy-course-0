@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Person from './Person/Person';
-import Radium, { StyleRoot } from 'radium';
+// import Radium, { StyleRoot } from 'radium';
 
 class App extends Component {
   state = {
@@ -42,14 +42,14 @@ class App extends Component {
       border: '1px solid blue',
       padding: '.5rem',
       cursor: 'pointer',
-      ':hover': {
-        backgroundColor: 'lightgreen',
-        color: 'black'
-      }
+      // ':hover': {
+      //   backgroundColor: 'lightgreen',
+      //   color: 'black'
+      // }
     };
 
     return (
-      <StyleRoot>
+      // <StyleRoot>
         <div className="App">
           <h1>Hi, I'm a React App </h1>
           <p>This is really working!</p>
@@ -72,10 +72,11 @@ class App extends Component {
             name={this.state.persons[2].name}
             age={this.state.persons[2].age}/>
         </div>
-      </StyleRoot>
+      // </StyleRoot>
     );
     // return React.createElement('div', { className: 'App'}, React.createElement('h1', null, 'Hi, I\'m a React App!!!!'));
   }
 }
 
-export default Radium(App);
+export default App;
+// export default Radium(App);
