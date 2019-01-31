@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../styles/custom.module.css';
 import './Person.css';
 // import Radium from 'radium';
 
@@ -12,7 +13,7 @@ const person = (props) => {
     // <div className="Person" style={style}>
     return (
         <div className="Person" >
-            <p onClick={props.click}>I'm { props.name } and I am { props.age } years old!</p>
+            <p className={styles.paragraph} onClick={props.click}>I'm { props.name } and I am { props.age } years old!</p>
             <p>{ props.children }</p>
             <input type="text" onChange={props.changed} value={props.name} />
         </div>
