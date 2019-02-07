@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/custom.module.css';
+import styles from '../../../styles/custom.module.css';
 import './Person.css';
 // import Radium from 'radium';
 
